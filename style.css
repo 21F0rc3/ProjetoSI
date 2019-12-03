@@ -1,0 +1,12 @@
+#table1 {
+  position: absolute;
+  left:100px;
+  top:100px;
+  border: 5px solid black;
+}
+
+#table2 {
+  position: absolute;
+  top: 100px;
+  left: 500;
+}
