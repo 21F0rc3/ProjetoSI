@@ -14,6 +14,8 @@
           top:200px;
         }
         div.b1{
+          border: 2px solid red;
+          background-color: white;
           position: absolute;
           left:100px;
           top:250px;
@@ -24,21 +26,26 @@
           top:200px;
         }
         div.b2{
+          border: 2px solid #ffcc00;
+          background-color: white;
           position: absolute;
           left:700px;
           top:250px;
         }
+        .customButton{
+          background-color: #009933;
+        }
       </style>
   </head>
-  <body>
+  <body style="background-color: rgb(255, 102, 0)">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="https://www.ufp.pt/"><img src="\www\ProjetoSI\logo.png" height="60"></a>
+      <a class="navbar-brand" href="https://www.ufp.pt/"><img src="\www\ProjetoSI\logo1.png" height="60"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form style="position:absolute; left:75px; top:25px;" class="form-inline my-2 my-lg-0">
-          <input id="userInput" class="form-control mr-sm-2" type="text" placeholder="Escreva...">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="printUserInput()">Search</button>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click Me!</button>
-          <button type="button" class="btn btn-primary" onclick="changeColor()">Change Color</button>
+        <form style="position:absolute; left:75px; top:25px;" class="menu form-inline my-2 my-lg-0">
+          <input id="userInput" class="form-control mr-sm-2" type="text" placeholder="Escreve...">
+          <button class="customButton btn" id="button" type="submit" onclick="printUserInput()">Imprime</button>
+          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mymodal">Calculadora</button>
+          <button type="button" class="btn btn-default" onclick="changeColor()">Muda o tema</button>
         </form>
         <div class="modal fade" id="mymodal">
           <div class="modal-dialog">
@@ -61,13 +68,12 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </nav>
     <div class="form-inline my-2 my-lg-0">
-      <button class="b1 btn btn-primary col-sm-4" type="button" data-toggle="collapse" data-target="#Gabriel" aria-expanded="false" aria-controls="Gabriel">Gabriel Fernandes</button>
-      <button class="b2 btn btn-primary col-sm-4" type="button" data-toggle="collapse" data-target="#Diogo" aria-expanded="false" aria-controls="Diogo">Diogo Rodrigues</button>
+      <button class="b1 btn btn-warning col-sm-4" type="button" data-toggle="collapse" data-target="#Gabriel" aria-expanded="false" aria-controls="Gabriel">Gabriel Fernandes</button>
+      <button class="b2 btn btn-danger col-sm-4" type="button" data-toggle="collapse" data-target="#Diogo" aria-expanded="false" aria-controls="Diogo">Diogo Rodrigues</button>
     </div>
-
     <div class="row align-items-center">
       <div class="b1 col-40 col-sm-4">
          <div class="collapse multi-collapse" id="Gabriel">

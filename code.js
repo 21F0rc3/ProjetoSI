@@ -6,10 +6,12 @@ function printUserInput() {
 }
 
 function changeColor() {
-  if(document.body.style.backgroundColor=="black") {
-    document.body.style.backgroundColor="white";
+  if(document.body.style.backgroundColor=="rgb(255, 102, 0)") {
+    document.body.style.backgroundColor="#009933";
+    document.getElementById("button").style.backgroundColor="rgb(255, 102, 0)";
   }else {
-    document.body.style.backgroundColor="black";
+    document.body.style.backgroundColor="rgb(255, 102, 0)";
+    document.getElementById("button").style.backgroundColor="#009933";
   }
 }
 
