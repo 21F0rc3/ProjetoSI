@@ -3,26 +3,43 @@
   <head>
     <title>Atividade 2</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="code.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="https://www.ufp.pt/"><img src="\www\ProjetoSI\logo.png" height="60"></a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input id="userInput" class="form-control mr-sm-2" type="text" placeholder="Escreva...">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="printUserInput()">Search</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click Me!</button>
+          <button type="button" class="btn btn-primary" onclick="changeColor()">Change Color</button>
         </form>
+        <div class="modal fade" id="mymodal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Insere 2 numeros:</h3>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label for="form1">Numero:</label>
+                  <input type="text" name="form" id="form1">
+                  <label for="form2">Numero:</label>
+                  <input type="text" name="form" id="form2">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="multiModal()">Confirm</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </nav>
     <button style="margin-top: 150px; margin-left: 300px;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Gabriel" aria-expanded="false" aria-controls="Gabriel">Gabriel Fernandes</button>
     <button style="margin-top: 150px; margin-left: 500px;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Diogo" aria-expanded="false" aria-controls="Diogo">Diogo Rodrigues</button>
@@ -41,27 +58,6 @@
            </div>
         </div>
       </div>
-    </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click Me!</button>
-    <div class="modal fade" id="mymodal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3>Insere 2 numeros:</h3>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label for="form1">Numero:</label>
-              <input type="text" name="form" id="form1">
-              <label for="form2">Numero:</label>
-              <input type="text" name="form" id="form2">
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div><div class="modal fade" id="mymodal">
   </body>
 </html>
