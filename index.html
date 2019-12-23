@@ -7,12 +7,34 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <script src="code.js"></script>
+      <style>
+        button.b1{
+          position: absolute;
+          left:100px;
+          top:200px;
+        }
+        div.b1{
+          position: absolute;
+          left:100px;
+          top:250px;
+        }
+        button.b2{
+          position: absolute;
+          left:700px;
+          top:200px;
+        }
+        div.b2{
+          position: absolute;
+          left:700px;
+          top:250px;
+        }
+      </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="https://www.ufp.pt/"><img src="\www\ProjetoSI\logo.png" height="60"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
+        <form style="position:absolute; left:75px; top:25px;" class="form-inline my-2 my-lg-0">
           <input id="userInput" class="form-control mr-sm-2" type="text" placeholder="Escreva...">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="printUserInput()">Search</button>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click Me!</button>
@@ -41,23 +63,26 @@
         </div>
       </div>
     </nav>
-    <button style="margin-top: 150px; margin-left: 300px;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Gabriel" aria-expanded="false" aria-controls="Gabriel">Gabriel Fernandes</button>
-    <button style="margin-top: 150px; margin-left: 500px;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#Diogo" aria-expanded="false" aria-controls="Diogo">Diogo Rodrigues</button>
+    <div class="form-inline my-2 my-lg-0">
+      <button class="b1 btn btn-primary col-sm-4" type="button" data-toggle="collapse" data-target="#Gabriel" aria-expanded="false" aria-controls="Gabriel">Gabriel Fernandes</button>
+      <button class="b2 btn btn-primary col-sm-4" type="button" data-toggle="collapse" data-target="#Diogo" aria-expanded="false" aria-controls="Diogo">Diogo Rodrigues</button>
+    </div>
+
     <div class="row align-items-center">
-      <div class="col-40 col-sm-6">
+      <div class="b1 col-40 col-sm-4">
          <div class="collapse multi-collapse" id="Gabriel">
             <div class="card card-body">
                DESCRIACAOa sdasd  sdas d asd as d as             ssssssssssssssssssssssssssssssssssssssssssssssssssssd        sadasd   dasd asd as da skdas das da s s  sda ds das dakd w qw ds ask w qw d w sw q wd .
             </div>
          </div>
       </div>
-      <div class="col-100 col-sm-6">
+      <div class="b2 col-100 col-sm-4">
         <div class="collapse multi-collapse" id="Diogo">
            <div class="card card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
            </div>
         </div>
       </div>
-    </div><div class="modal fade" id="mymodal">
+    </div>
   </body>
 </html>
