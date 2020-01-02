@@ -26,3 +26,27 @@ function multiModal() {
   }
   alert(num1*num2);
 }
+
+function diviModal() {
+  var num1=document.getElementById("form3").value;
+  var num2=document.getElementById("form4").value;
+  if(num2!=0) {
+    alert(num1/num2);
+  }else{
+    alert("ERRO");
+  }
+}
+
+function somaModal() {
+  var num1=document.getElementById("form5").value;
+  var num2=document.getElementById("form6").value;
+
+  alert(num1+num2);
+}
+
+function subtModal() {
+   var num1=document.getElementById("form7").value;
+   var num2=document.getElementById("form8").value;
+
+   alert(num1-num2);
+}
